@@ -9,8 +9,8 @@ img_type =  'val' #'train' #'val'
 
 coco_input_folder = '/home/superorange5/data/coco/'+img_type+'2014'
 #MI3_folder = '/home/superorange5/MI3_dataset/MI3_dataset/JPEGImages/'
-MI3_folder = '/home/superorange5/MI3_dataset/MI3_dataset_ch2/JPEGImages/'
-coco_output_folder = '/home/superorange5/data/coco/FDA0001_ch2__'+img_type+'2014'
+MI3_folder = '/home/superorange5/MI3_dataset/MI3_dataset_ch4/JPEGImages/'
+coco_output_folder = '/home/superorange5/data/coco/FDA0001_ch4__'+img_type+'2014'
 BETA = 0.001
 if not os.path.isdir(coco_output_folder):
     os.makedirs(coco_output_folder)

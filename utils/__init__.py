@@ -49,6 +49,7 @@ def FDA_source_to_target(src_img, trg_img, L=0.1):
 
     # replace the low frequency amplitude part of source with that from target
     amp_src_ = low_freq_mutate( amp_src.clone(), amp_trg.clone(), L=L )
+    
 
     # recompose fft of source
     fft_src_ = torch.zeros( fft_src.size(), dtype=torch.float )
