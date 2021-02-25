@@ -14,7 +14,7 @@ else:
 KAIST_visible_folder = '/home/superorange5/data/KAIST/KAIST_'+mode+'/visible_images'
 KAIST_thermal_folder = '/home/superorange5/data/KAIST/KAIST_'+mode+'/thermal_images'
 
-output_folder = '/home/superorange5/data/KAIST/KAIST_FDA0005' + mode
+output_folder = '/home/superorange5/data/KAIST/KAIST_FDA0005_' + mode
 BETA = 0.005
 if not os.path.isdir(output_folder):
     os.makedirs(output_folder)
@@ -23,7 +23,7 @@ visible_list = os.listdir(KAIST_visible_folder)
 thermal_list = os.listdir(KAIST_thermal_folder)
 
 # 1 to 1
-for filename in enumerate(visible_list):
+for filename in visible_list:
     if any(set_num in filename for set_num in training_set):
         src_img = os.path.join(KAIST_visible_folder, filename)
         target_img = os.path.join(KAIST_thermal_folder, filename)
