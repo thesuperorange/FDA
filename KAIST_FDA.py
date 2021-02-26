@@ -11,8 +11,8 @@ if mode == 'DAY':
     training_set = ['set00','set01','set02']
 else:
     training_set = ['set03', 'set04', 'set05']
-KAIST_visible_folder = '/home/superorange5/data/KAIST/KAIST_COMPLETE/visible_images'+mode
-KAIST_thermal_folder = '/home/superorange5/data/KAIST/KAIST_COMPLETE/thermal_images'+mode
+KAIST_visible_folder = '/home/superorange5/data/KAIST/KAIST_COMPLETE/visible_images_'+mode
+KAIST_thermal_folder = '/home/superorange5/data/KAIST/KAIST_COMPLETE/thermal_images_'+mode
 
 output_folder = '/home/superorange5/data/KAIST/KAIST_FDA0005_' + mode
 BETA = 0.005
