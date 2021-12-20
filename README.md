@@ -23,7 +23,7 @@ Step 3: Apply inverse FFT to the modified source spectrum.
 python ConvertMI3.py
 ```
 ### Training
-* use fasterRCNN to train (link)
+* use fasterRCNN to train [link](https://github.com/thesuperorange/deepMI3/tree/master/faster-RCNN)
 
 ```
 python trainval_net.py --dataset coco --net res101 --cuda --mGPUs --bs 16 --nw 8 --lr_decay_step 4 --lr 0.01 --epochs 10
